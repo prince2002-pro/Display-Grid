@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Chessboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    /* Write your code here */
+    /* Each square should be 100px by 100px */
+    /* My colours for white: #f0d9b5, black: #b58863 */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      width: 400px;
+      height: 400px;
+      
+    
+
+    }
+    .white{
+    background-color: #d4c3a7;
+    
+    
+
+    }
+    .black{
+      background-color: #907057;
+
+    }
+    i{
+      font-size: 25px;
+      
+    }
+   .container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+   }
+
+   .white-pieces-container {
+    color: white;
+   }
+   .black-pieces-container {
+    color: white;
+   }
+  
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="white"><i class="fas fa-chess-rook icon" style="color: white;"></i> <!-- Rook --></div>
+    <div class="black"><i class="fas fa-chess-knight icon" style="color: white;"></i> <!-- Knight --></div>
+    <div class="white"><i class="fas fa-chess-bishop icon" style="color: white;"></i> <!-- Bishop --></div>
+    <div class="black"><i class="fas fa-chess-queen icon" style="color: white;"></i> <!-- Queen --></div>
+    <div class="white"><i class="fas fa-chess-king icon" style="color: white;"></i> <!-- King --></div>
+    <div class="black"><i class="fas fa-chess-bishop icon" style="color: white;"></i> <!-- Bishop --></div>
+    <div class="white"><i class="fas fa-chess-knight icon" style="color: white;"></i> <!-- Knight --></div>
+    <div class="black"><i class="fas fa-chess-rook icon" style="color: white;"></i> <!-- Rook --></div>
+    <div class="black"><i class="fas fa-chess-pawn icon" style="color: white;"></i> <!-- Pawn --></div>
+    <div class="white"><i class="fas fa-chess-pawn icon" style="color: white;"></i> <!-- Pawn --></div>
+    <div class="black"><i class="fas fa-chess-pawn icon" style="color: white;"></i> <!-- Pawn --></div>
+    <div class="white"><i class="fas fa-chess-pawn icon" style="color: white;"></i> <!-- Pawn --></div>
+    <div class="black"><i class="fas fa-chess-pawn icon" style="color: white;"></i> <!-- Pawn --></div>
+    <div class="white"><i class="fas fa-chess-pawn icon" style="color: white;"></i> <!-- Pawn --></div>
+    <div class="black"><i class="fas fa-chess-pawn icon" style="color: white;"></i> <!-- Pawn --></div>
+    <div class="white"><i class="fas fa-chess-pawn icon" style="color: white;"></i> <!-- Pawn --></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"><i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn --></div>
+    <div class="black"><i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn --></div>
+    <div class="white"><i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn --></div>
+    <div class="black"><i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn --></div>
+    <div class="white"><i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn --></div>
+    <div class="black"><i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn --></div>
+    <div class="white"><i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn --></div>
+    <div class="black"><i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn --></div>
+    <div class="black"><i class="fas fa-chess-rook icon-white"></i> <!-- Rook --></div>
+    <div class="white"><i class="fas fa-chess-knight icon-white"></i> <!-- Knight --></div>
+    <div class="black"><i class="fas fa-chess-bishop icon-white"></i> <!-- Bishop --></div>
+    <div class="white"><i class="fas fa-chess-king icon-white"></i> <!-- King --></div>
+    <div class="black"><i class="fas fa-chess-queen icon-white"></i> <!-- Queen --></div>
+    <div class="white"><i class="fas fa-chess-bishop icon-white"></i> <!-- Bishop --></div>
+    <div class="black"><i class="fas fa-chess-knight icon-white"></i> <!-- Knight --></div>
+    <div class="white"><i class="fas fa-chess-rook icon-white"></i> <!-- Rook --></div>
+
+
+    
+
+</div>
+
+<div class="black-pieces-container">
+    
+      <i class="fas fa-chess-king icon"></i> <!-- King -->
+      <i class="fas fa-chess-queen icon"></i> <!-- Queen -->
+      <i class="fas fa-chess-rook icon"></i> <!-- Rook -->
+      <i class="fas fa-chess-bishop icon"></i> <!-- Bishop -->
+      <i class="fas fa-chess-knight icon"></i> <!-- Knight -->
+      <i class="fas fa-chess-pawn icon"></i> <!-- Pawn -->
+    </div>
+
+    <div class="white-pieces-container">
+      
+        <i class="fas fa-chess-king icon-white"></i> <!-- King -->
+        <i class="fas fa-chess-queen icon-white"></i> <!-- Queen -->
+        <i class="fas fa-chess-rook icon-white"></i> <!-- Rook -->
+        <i class="fas fa-chess-bishop icon-white"></i> <!-- Bishop -->
+        <i class="fas fa-chess-knight icon-white"></i> <!-- Knight -->
+        <i class="fas fa-chess-pawn icon-white"></i> <!-- Pawn -->
+    </div>
+</body>
+
+</html>
